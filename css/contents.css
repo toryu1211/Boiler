@@ -2,7 +2,7 @@
 
     /* 메인 */
     .mainBanner{width:100%;height:400px;background:#abcfcb;}
-    .mainBanner .mainBg{position:relative;width:100%;height:100%;background:url('./images/main_visual.png')no-repeat center / cover;}
+    .mainBanner .mainBg{position:relative;width:100%;height:100%;background:url('../images/main_visual.png')no-repeat center / cover;}
     .mainBanner .txtArea{display:flex;width:1000px;height:100%;margin:0 auto;align-items:center;text-align:right;justify-content:flex-end;}
     .mainBanner .txtArea .txt{}
     .mainBanner .txtArea .tit{line-height:46px;font-size:36px;font-weight:700;font-family:'Gmarket Sans';color:#574e44;}
@@ -45,7 +45,7 @@
 	.sub.contents{display:flex;justify-content:space-between;margin-bottom:22px;}
 
 	.leftMenu{width:250px;text-align:center;}
-	.leftMenu .menuTit{display:flex;align-items:center;height:130px;background:url('./images/sub_title.jpg')no-repeat center / cover;}
+	.leftMenu .menuTit{display:flex;align-items:center;height:130px; background:url('../images/sub_title.jpg')no-repeat center / cover;}
 	.leftMenu .menuTit h4{width:100%;line-height:36px;font-size:26px;color:#fff;}
 	.leftMenu ul{margin-top:30px;border:1px solid #ddd;}
 	.leftMenu ul li{height:60px;border-bottom:1px solid #ddd;box-sizing:border-box;}
@@ -61,7 +61,7 @@
 	.subCon .txtArea span{font-size:20px;font-weight:700;}
 
 	.subBanner{width:100%;height:130px;background:#abcfcb;}
-	.subBanner .mainBg{position:relative;width:100%;height:100%;background:url('./images/sub_visual.png')no-repeat center / cover;}
+	.subBanner .mainBg{position:relative;width:100%;height:100%;background:url('../images/sub_visual.png')no-repeat center / cover;}
 	.subBanner .txtArea{display:flex;width:1000px;height:100%;margin:0 auto;align-items:center;text-align:left;justify-content:flex-start;}
 	.subBanner .txtArea .txt{}
 	.subBanner .txtArea .tit{line-height:34px;font-size:28px;font-weight:700;color:#fff;}
@@ -88,6 +88,7 @@
 	.executive th{border-bottom:1px solid #ffdab0;color:#ff9720;background:#fff6ed;}
 	.executive td{border-bottom:1px solid #dddddd;}
 	.executive tr:last-child td{border-bottom:0 none;}
+    .executive td.title{overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
 
     /* 오시는길 */
     .mapArea{width:100%;height:320px;background:#ddd;margin-bottom:36px;}
@@ -225,7 +226,7 @@
 		#footer .fLogo{margin:0 0 20px 0;}
 
 		.mainBanner{height:110vw;}
-		.mainBanner .mainBg{background:url('./images/main_visual_mo.png')no-repeat center / cover;}
+		.mainBanner .mainBg{background:url('../images/main_visual_mo.png')no-repeat center / cover;}
 		.mainBanner .txtArea{width:100%;text-align:center;justify-content:center;align-items:flex-start;padding-top:10%;color:#fff;}		
 		.mainBanner .txtArea .tit{font-size:1.5rem;line-height:normal;}
 		.mainBanner .txtArea .tail{font-size:.9rem;line-height:normal;}	
@@ -247,4 +248,17 @@
 		.rightBtnArea li a img{width:2rem;}
 		.btmBanner{width:95%;margin:30px auto 0;}
 		.board{margin:30px auto;width:95%;}
+
+        .sub.contents { flex-direction: column; }
+        .subBanner .txtArea { width: 100%; }
+        .subTit { border-bottom: 0; }
+        .leftMenu { display: none;}
+        .content { width: 95%; margin: 0 auto; }        
 	}
+
+    @media (max-width: 750px) {
+        .subBanner .mainBg { background: url(../images/sub_visual.png)no-repeat top right -530px; }
+        .subBanner .txtArea { text-align: center; justify-content: center; }
+        .subBanner .txtArea .tit { font-size: 1.1rem; line-height: normal; }
+        .subBanner .txtArea .tail { font-size: .7rem; line-height: normal; }        
+    }

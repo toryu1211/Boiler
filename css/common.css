@@ -57,6 +57,11 @@ a:hover{text-decoration:none;}
 #footer .fInfo .contact span:last-child:after{content:none;}
 #footer .fInfo .copyright{}
 
+.paging { width: 100%; height: auto; display: flex; align-items: center; justify-content: center; margin-top: 50px;}
+.paging ul { display: flex; margin: 0 20px; }
+.paging ul li { width: 30px; height: 30px; text-align: center; line-height: 30px; }
+.paging ul li.on a { color: #ff9720; }
+
 
 /* 반응형 */
 @media (max-width:1000px) {
