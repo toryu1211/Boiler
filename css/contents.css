@@ -260,5 +260,8 @@
         .subBanner .mainBg { background: url(../images/sub_visual.png)no-repeat top right -530px; }
         .subBanner .txtArea { text-align: center; justify-content: center; }
         .subBanner .txtArea .tit { font-size: 1.1rem; line-height: normal; }
-        .subBanner .txtArea .tail { font-size: .7rem; line-height: normal; }        
+        .subBanner .txtArea .tail { font-size: .7rem; line-height: normal; }    
+        .subCon .imgArea { width: 30vw; margin: 0 10px 10px 0; }    
+        .subCon .imgArea img { width: 100%; }
+        .subCon .txtArea { font-size: .9rem; }
     }
