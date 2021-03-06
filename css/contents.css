@@ -107,18 +107,32 @@
 
     .subCon .gsTable li{margin-top:10px;}
     .subCon .gsTable li:first-child{margin-top:0px;}
-    .subCon .gsTable .tit{margin-bottom:0;width:360px;height:40px;font-size:16px;line-height:40px;color:#ff9720;background:#fff6ed;text-align:center;border:1px solid #ff9720;box-sizing:border-box;font-weight:400;}
+    .subCon .gsTable .tit{display:flex;align-items:center;justify-content:center;margin-bottom:0;width:360px;height:40px;font-size:16px;color:#ff9720;background:#fff6ed;text-align:center;border:1px solid #ff9720;box-sizing:border-box;font-weight:400;}
     .subCon .gsTable .tail{height:55px;padding-top:5px;box-sizing:border-box;border:1px solid #ddd;border-top:0 none;text-align:center;font-size:14px;line-height:19px;}
     
     .subCon .gsTable.info{display:flex;justify-content:space-between;align-items:center;}
     .subCon .gsTable.info li{float:left;margin:0;width:calc(33.33% - 14px);}
     .subCon .gsTable.info .tit{width:100%;}
-    .subCon .gsTable.info .tail{}
+    
+    .subCon .gsTable.info.step li{position:relative;}
+    .subCon .gsTable.info.step li:after{content:'';position:absolute;top:20px;background:#ff9720;height:1px;}
+    .subCon .gsTable.info.step.nm5 li{width:calc(20% - 16px);}
+    .subCon .gsTable.info.step.nm5 li:after{right:-20px;width:20px;}
+    .subCon .gsTable.info.step.nm4 li{width:calc(25% - 15px);}
+    .subCon .gsTable.info.step.nm4 li:after{right:-20px;width:20px;}
+    .subCon .gsTable.info.step li:last-child:after {content:none;}
+    .subCon .gsTable.info.step .tail{display:flex;align-items:center;justify-content:center;height:90px;padding:0;}
 
     .flexArea{display:flex;align-items:center;justify-content:space-between;}
 
     .subCon .txtArea .circle{display:flex;align-items:center;flex-direction:column;justify-content:center;width:172px;height:172px;background-color:#ff9720;border-radius:50%;text-align:center;}
     .subCon .txtArea .circle span{margin-top:10px;font-size:14px;font-weight:400;line-height:19px;color:#fff;}
+
+    .subUl{}
+    .subUl li{margin-bottom:15px;}
+    .subUl .title{position:relative;padding-left:12px;font-size:16px;font-weight:700;}
+    .subUl .title:before{content:'';display:block;position:absolute;top:50%;left:0;border-radius:50%;width:7px;height:7px;margin-top:-3.5px;background:#fd941e;}
+
 
 	/* 조직도 */
 	ol.orgChart,

@@ -13,7 +13,7 @@
 	<script type="text/javascript" src="../../Plugin/JQuery/js/jquery-migrate-1.2.1.min.js"></script>    
 	<script type="text/javascript" src="../../Plugin/JQuery/js/jquery-ui.js"></script>
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-	<script type="text/javascript" src="ui.js"></script>
+	<script type="text/javascript" src="./js/ui.js"></script>
 	<link rel="stylesheet" href="./css/common.css" />
 	<link rel="stylesheet" href="./css/contents.css" />
 </head>
@@ -238,61 +238,3 @@
 	</div>
 </body>
 </html>
-
-<script>	
-/* 키워드 */
-var keyWordPo = 0
-var keyWordRoll = setInterval(keyWordMove,30);
-var keyWordRollView = false;
-
-function keyWordMove(){
-	keyWordPo --;
-	if (-$('.btmBanner li').eq(0).outerWidth() - 3 > keyWordPo)
-	{
-		$('.btmBanner ul').append($('.btmBanner li').eq(0)).css({'margin-left' : 0});
-		keyWordPo = 0;
-	}
-	else
-	{
-		$('.btmBanner ul').css({'margin-left' : keyWordPo});
-	}
-}
-
-$('.btmBanner a').on('mouseenter', function(){
-	clearInterval(keyWordRoll);
-});
-
-$('.btmBanner a').on('mouseleave', function(){
-	if (!keyWordRollView)
-	{
-		keyWordRoll = setInterval(keyWordMove,20);
-	}
-});
-
-$('.mo_menu > a').on('click', function(){
-	//alert("ok");
-	var $nav = $('.menuList')
-
-	if($nav.css('display') == 'none'){
-		$nav.show();		
-	}else{
-		$nav.hide();
-	}
-
-	return false;
-});
-
-//모바일일때 헤더 fixed
-$(function(){
-	var $window = $(window);	
-
-	$window.scroll(function(){
-		if($window.width() <= 1000 && $window.scrollTop() > 0){
-			$('#header').addClass('fixed');
-		}else{
-			$('#header').removeClass('fixed');
-		}
-	});
-});
-
-</script>
