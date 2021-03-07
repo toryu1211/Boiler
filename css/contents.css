@@ -114,6 +114,8 @@
     .subCon .gsTable.info li{float:left;margin:0;width:calc(33.33% - 14px);}
     .subCon .gsTable.info .tit{width:100%;}
     
+    .subCon .gsTable.info.step.nm4,
+    .subCon .gsTable.info.step.nm5{margin-top:15px;}
     .subCon .gsTable.info.step li{position:relative;}
     .subCon .gsTable.info.step li:after{content:'';position:absolute;top:20px;background:#ff9720;height:1px;}
     .subCon .gsTable.info.step.nm5 li{width:calc(20% - 16px);}
@@ -122,6 +124,8 @@
     .subCon .gsTable.info.step.nm4 li:after{right:-20px;width:20px;}
     .subCon .gsTable.info.step li:last-child:after {content:none;}
     .subCon .gsTable.info.step .tail{display:flex;align-items:center;justify-content:center;height:90px;padding:0;}
+    .subCon .gsTable.info.step .tail.tlf{text-align:left;}
+    .subCon .gsTable.info.step.nm4 .tit{height:65px;}
 
     .flexArea{display:flex;align-items:center;justify-content:space-between;}
 
