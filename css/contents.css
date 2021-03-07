@@ -67,17 +67,15 @@
 	.subBanner .txtArea .tit{line-height:34px;font-size:28px;font-weight:700;color:#fff;}
 	.subBanner .txtArea .tail{margin-top:5px;line-height:28px;font-size:17px;color:#fff;}
 
-	.historyTab{width:100%;margin:0 auto;position:relative;}
-	.historyTab > li{display:inline-block; width:33.33%;float:left;text-align:center;}
-	.historyTab > li a{display:block;line-height:40px;height:40px;text-decoration:none;}
-	.tabCon{display:none;text-align:left;position:absolute;left:0;top:70px;box-sizing:border-box;border-top:2px solid #ff9720;border-bottom:2px solid #ff9720;}
-	.btnCon{background:#ddd;}
-	.btnCon a{position:relative;color:#999;}
-	.btnCon a:after{display:none;content:'';position:absolute;bottom:-5px;left:calc(50% - 7.5px);width:15px;height:15px;background:#ff9720;transform:rotate(45deg);}
-	.btnCon:target{background:#ff9720;}
-	.btnCon:target a{color:#fff;}
-	.btnCon:target a:after{display:block;}
-	.btnCon:target .tabCon{display:block;width:100%;}
+	#tabCon{width:100%;margin:0 auto;position:relative;}
+	#tabCon:after{content:'';display:block;clear:both;}
+	#tabCon li{display:inline-block; width:33.33%;float:left;text-align:center;}
+	#tabCon li.on{display:inline-block; width:33.33%;float:left;text-align:center;}
+	#tabCon li a{display:block;line-height:40px;height:40px;text-decoration:none;position:relative;color:#999;background:#ddd;}
+    #tabCon li.on a{position:relative;background:#ff9720;color:#fff;}
+    #tabCon li.on a:after{content:'';position:absolute;bottom:-5px;left:calc(50% - 7.5px);width:15px;height:15px;transform:rotate(45deg);background:rgb(255, 151, 32);}
+    #tab1{display:block;}
+	.tabCon{display:none;margin-top:30px;text-align:left;box-sizing:border-box;border-top:2px solid #ff9720;border-bottom:2px solid #ff9720;}
 	.tabCon ol li{display:flex;height:40px;align-items:center;border-bottom:1px dotted #ddd;}
 	.tabCon ol li:last-child{border-bottom:0 none;}
 	.tabCon ol li .date{padding:0 50px 0 10px;color:#ff9720;}
