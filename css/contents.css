@@ -89,7 +89,7 @@
     .executive td.title{overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
 
     /* 오시는길 */
-    .mapArea{width:100%;height:320px;background:#ddd;margin-bottom:36px;}
+    .mapArea{width:100%;height:320px;background:#ddd;margin-bottom:36px;background:url('../images/map.jpg')no-repeat;}
 	.directions{text-align:left;border-top:2px solid #ff9720;border-bottom:2px solid #ff9720;}
 	.directions tr{height:65px;}
 	.directions th{padding-left:10px;border-bottom:1px solid #ffdab0;color:#ff9720;background:#fff6ed;}
@@ -108,6 +108,14 @@
     .subCon .gsTable .tit{display:flex;align-items:center;justify-content:center;margin-bottom:0;width:360px;height:40px;font-size:16px;color:#ff9720;background:#fff6ed;text-align:center;border:1px solid #ff9720;box-sizing:border-box;font-weight:400;}
     .subCon .gsTable .tail{height:55px;padding-top:5px;box-sizing:border-box;border:1px solid #ddd;border-top:0 none;text-align:center;font-size:14px;line-height:19px;}
     
+    .subCon .gsTable.join{width:360px;}
+    .subCon .gsTable.join li{position:relative;margin-top:30px;}
+    .subCon .gsTable.join li:first-child{margin-top:0px;}
+    .subCon .gsTable.join li:after{content:'';position:absolute;bottom:-23px;left:50%;display:block;background:url('../images/process_arrow.png')no-repeat;width:12px;height:19px;margin-left:-6px;}
+    .subCon .gsTable.join li:last-child:after{content:none;}
+    .subCon .gsTable.join .tit,.subCon .gsTable.join .tail{display:flex;align-items:center;text-align:center;justify-content:center;}
+    .gsTable.join .tail{height:auto;padding:10px;}
+    
     .subCon .gsTable.info{display:flex;justify-content:space-between;align-items:center;}
     .subCon .gsTable.info li{float:left;margin:0;width:calc(33.33% - 14px);}
     .subCon .gsTable.info .tit{width:100%;}
@@ -122,10 +130,12 @@
     .subCon .gsTable.info.step.nm4 li:after{right:-20px;width:20px;}
     .subCon .gsTable.info.step li:last-child:after {content:none;}
     .subCon .gsTable.info.step .tail{display:flex;align-items:center;justify-content:center;height:90px;padding:0;}
+    .subCon .gsTable.info.step.h155 .tail{height:155px;line-height:30px;}
     .subCon .gsTable.info.step .tail.tlf{text-align:left;}
     .subCon .gsTable.info.step.nm4 .tit{height:65px;}
 
     .flexArea{display:flex;align-items:center;justify-content:space-between;}
+    .flexArea ~ .txtArea{margin-top:30px;}
 
     .subCon .txtArea .circle{display:flex;align-items:center;flex-direction:column;justify-content:center;width:172px;height:172px;background-color:#ff9720;border-radius:50%;text-align:center;}
     .subCon .txtArea .circle span{margin-top:10px;font-size:14px;font-weight:400;line-height:19px;color:#fff;}
@@ -134,7 +144,6 @@
     .subUl li{margin-bottom:15px;}
     .subUl .title{position:relative;padding-left:12px;font-size:16px;font-weight:700;}
     .subUl .title:before{content:'';display:block;position:absolute;top:50%;left:0;border-radius:50%;width:7px;height:7px;margin-top:-3.5px;background:#fd941e;}
-
 
 	/* 조직도 */
 	ol.orgChart,
@@ -213,9 +222,6 @@
         ol.orgChart > li > ol > li + li:not(:last-of-type):after{height:1px;left:0;top:0;width:100%;}
     }
 
-
-
-
     /* 사업정보 */
     .majorBList{margin-top:-20px;}
     .majorBList li{float:left;width:calc(50% - 10px);min-height:230px;margin-top:20px;padding:20px;box-sizing:border-box;background:#fff6ed;}
@@ -224,10 +230,6 @@
     .majorBList li .tit{font-size:16px;color:#ff9720;font-weight:700;}
     .majorBList li .tit img{margin-right:5px;}
     .majorBList li .tail{}
-
-
-
-
 
     /* 반응형 */
 	@media (max-width:1000px) {
