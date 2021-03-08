@@ -42,4 +42,21 @@ $(function(){
 
 		return false;
 	});
+
+	//모바일 메뉴 아코디언
+	$(".menu").click(function(e){
+		var $acodian = $(this).next('.acodian');
+
+		if($window.width() <= 1000){
+			 e.preventDefault();
+			 if($acodian.css('display') == 'none'){
+			 	$('.acodian').slideUp();
+				$acodian.slideDown();			 	
+			 }else{
+			 	$('.acodian').slideUp();
+			 }
+		}else{
+			e.unbind();
+		}
+	});
 });
