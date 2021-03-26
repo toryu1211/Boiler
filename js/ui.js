@@ -17,6 +17,16 @@ function keyWordMove(){
 		$('.btmBanner ul').css({'margin-left' :keyWordPo});
 	}
 }
+$(document).on('mouseenter', '.btmBanner li a', function(){
+	clearInterval(keyWordRoll);
+});
+
+$(document).on('mouseleave', '.btmBanner li a', function(){
+	if (!keyWordRollView)
+	{
+		keyWordRoll = setInterval(keyWordMove,30);
+	}
+});
 //모바일일때 헤더 fixed
 $(function(){
 	var $window = $(window);	

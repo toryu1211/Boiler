@@ -1,11 +1,11 @@
  @charset "utf-8";
 
     /* 메인 */
-    .mainBanner{width:100%;height:400px;background:#abcfcb;}
-    .mainBanner .mainBg{position:relative;width:100%;height:100%;background:url('../images/main_visual.png')no-repeat center / cover;}
+    .mainBanner{width:100%;height:400px;background:#fff;}
+    .mainBanner .mainBg{position:relative;width:100%;height:100%;background:url('../images/main_visual.jpg')no-repeat center / cover;}
     .mainBanner .txtArea{display:flex;width:1000px;height:100%;margin:0 auto;align-items:center;text-align:right;justify-content:flex-end;}
     .mainBanner .txtArea .txt{}
-    .mainBanner .txtArea .tit{line-height:46px;font-size:36px;font-weight:700;font-family:'Gmarket Sans';color:#574e44;}
+    .mainBanner .txtArea .tit{line-height:42px;font-size:30px;font-weight:700;font-family:'KBIZHanmaumGothic';color:#574e44;}
     .mainBanner .txtArea .tail{margin-top:24px;line-height:30px;font-size:20px;color:#574e44;}
 
     .leftBtnArea li{width:200px;height:93px;background:#ff9720;border-top:1px solid #fff;}
@@ -249,8 +249,8 @@
 
     /* 반응형 */
 	@media (max-width:1000px){
-		.mainBanner{height:110vw;}
-		.mainBanner .mainBg{background:url('../images/main_visual_mo.png')no-repeat center / cover;}
+		.mainBanner{height:130vw;}
+		.mainBanner .mainBg{background:url('../images/main_visual_mo2.jpg')no-repeat center / cover;}
 		.mainBanner .txtArea{width:100%;text-align:center;justify-content:center;align-items:flex-start;padding-top:10%;color:#fff;}		
 		.mainBanner .txtArea .tit{font-size:1.5rem;line-height:normal;}
 		.mainBanner .txtArea .tail{font-size:.9rem;line-height:normal;}
