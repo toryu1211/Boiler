@@ -7,9 +7,9 @@ var keyWordRollView = false;
 
 function keyWordMove(){
 	keyWordPo --;
-	if (-$('.btmBanner li').eq(0).outerWidth() - 3 > keyWordPo)
+	if (-$('.btmBanner li').eq(0).outerWidth() - 30 > keyWordPo)
 	{
-		$('.btmBanner ul').append($('.btmBanner li').eq(0)).css({'margin-left' :0});
+		$('.btmBanner ul').append($('.btmBanner li').eq(0)).css({'margin-left':0});
 		keyWordPo = 0;
 	}
 	else
